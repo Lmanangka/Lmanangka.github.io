@@ -1,24 +1,58 @@
 html{
-  font-size:  10px;
-  font-family: 'Oxygen Mono', monospace;
+
   background-color: lightGray;
+  font-family: 'Oxygen Mono', monospace;
   margin-left: 70px;
   margin-right: 70px;
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
 }
 
-h1{
-  font-size: 60px;
+header{
+  font-size: 65px;
   text-align: left;
 }
 
-h2{
+aside{
   font-size: 30px;
   text-align: left;
 }
 
-p{
+p, li{
   font-size: 16px;
+  text-align: left;
   line-height: 2;
   letter-spacing: 1px;
+}
+
+.content{
+  height: 90vh;
+  width: 90vw;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-areas: "header header"
+                       "left right"
+                       "readme publish";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 0.25fr 3fr;
+}
+
+.cell-1{
+  /* background: red; */
+  grid-area: header;
+}
+.cell-2{
+  /* background: yellow; */
+  grid-area: left;
+}
+.cell-3{
+  /* background: green; */
+  grid-area: right;
+}
+.cell-4{
+  /* background: pink; */
+  grid-area: readme;
+}
+.cell-5{
+  /* background: purple; */
+  grid-area: publish
 }
