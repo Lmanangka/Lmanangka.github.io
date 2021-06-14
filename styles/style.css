@@ -53,7 +53,7 @@ html{
   letter-spacing: 1px;
 }
 
-@media screen and (min-width: 423px) {
+@media screen and (min-width: 422px) {
   .layout{
     display: grid;
     grid-template-columns: 1fr 1fr;
